@@ -1,0 +1,30 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 20px;
+    padding: 10px 3em 0 3em;
+}
+
+a {
+    margin: 1.5em;
+    color: black;
+    text-decoration: none;
+}
+
+#pichu {
+    width: 10%;
+    border-radius: 90px;
+    border: 1px #D1D1D1 solid;
+}
+
+li{
+    list-style-type: none;
+}
