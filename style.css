@@ -1,3 +1,4 @@
+@charset "UTF-8";
 * {
   margin: 0;
   padding: 0;
@@ -11,6 +12,7 @@
   --color-title: pink;
   --color-title2: #C7D9FF;
   --color-p: #303030;
+  --color-pink: #F1B1EF;
 }
 
 .dark-mode {
@@ -19,6 +21,7 @@
   --color-title: #F485EF;
   --color-title2: #90A1C7;
   --color-p: white;
+  --color-pink: #F42BEB;
 }
 
 .title {
@@ -35,11 +38,17 @@
   font-size: 20px;
   padding: 1em 3em 0 3em;
 }
-
-a {
+.navbar a {
   margin: 1.5em;
   color: var(--dark-color);
   text-decoration: none;
+}
+.navbar a:hover {
+  border: solid;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  border-color: var(--color-pink);
 }
 
 #pichu {
@@ -48,7 +57,7 @@ a {
   border: 1px #D1D1D1 solid;
 }
 
-li {
+.li {
   list-style-type: none;
 }
 
@@ -78,34 +87,77 @@ li {
   justify-content: center;
 }
 .nom_prenom h2 {
-  font-size: 50px;
+  font-size: 35px;
   font-weight: lighter;
   color: var(--color-p);
   z-index: 2;
 }
 
-.etoile {
+.triangle {
   width: 0;
   height: 0;
-  border-left: 50px solid transparent;
-  border-right: 50px solid transparent;
-  border-bottom: 100px solid #FFAEF4;
+  border-left: 30px solid transparent;
+  border-right: 30px solid transparent;
+  border-bottom: 60px solid var(--color-pink);
   position: absolute;
   top: 15%;
-  left: 43%;
+  left: 46%;
   transform: rotate(90deg);
   transition: 0.6s;
 }
-.etoile:hover {
+.triangle:hover {
   transform: rotate(0deg);
 }
 
 .aboutme {
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
   align-items: center;
-  padding: 4em;
+  padding: 4em 15em;
   gap: 60px;
+}
+.aboutme img {
+  width: 60%;
+  height: 50vh;
+  object-fit: cover;
+  object-position: bottom;
+  border-top-left-radius: 80px 80px;
+  border-bottom-right-radius: 80px 80px;
+}
+.aboutme div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 10px;
+  padding: 0 2em;
+  width: 90%;
+  align-items: center;
+}
+.aboutme div ul {
+  border: var(--color-pink) solid;
+  border-top-left-radius: 80px 80px;
+  border-bottom-right-radius: 80px 80px;
+  padding: 1em 5em;
+  border-bottom: none;
+  border-top: none;
+}
+.aboutme div ul li {
+  font-size: 18px;
+  list-style-type: circle;
+}
+.aboutme div ul:after {
+  content: "✨";
+}
+.aboutme h2:before {
+  content: "🍪";
+}
+
+#etoile {
+  position: absolute;
+  width: 2%;
+  top: 47%;
+  left: 84%;
+  transform: rotate(45deg);
 }
 
 /*# sourceMappingURL=style.css.map */
