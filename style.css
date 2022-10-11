@@ -1,60 +1,111 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Poppins', sans-serif;
-
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  color: var(--color-p);
 }
 
 :root {
-    --dark-color: black;
-    --color-title: pink; 
-    --color-title2: #C7D9FF;
+  --dark-color: black;
+  --color-title: pink;
+  --color-title2: #C7D9FF;
+  --color-p: #303030;
 }
 
 .dark-mode {
-    background-color: black;
-    --dark-color: white;
-    --color-title: #F485EF; 
-    --color-title2: #90A1C7;
+  background-color: black;
+  --dark-color: white;
+  --color-title: #F485EF;
+  --color-title2: #90A1C7;
+  --color-p: white;
 }
 
-.title{
-
-    background: -webkit-linear-gradient(120deg, var(--color-title) 30%, var(--color-title2) 70%);
-    background-clip: border-box;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    
-
+.title {
+  background: -webkit-linear-gradient(120deg, var(--color-title) 30%, var(--color-title2) 70%);
+  background-clip: border-box;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 .navbar {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    font-size: 20px;
-    padding: 1em 3em 0 3em;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 20px;
+  padding: 1em 3em 0 3em;
 }
 
 a {
-    margin: 1.5em;
-    color: var(--dark-color);
-    text-decoration: none;
+  margin: 1.5em;
+  color: var(--dark-color);
+  text-decoration: none;
 }
 
 #pichu {
-    width: 15%;
-    border-radius: 90px;
-    border: 1px #D1D1D1 solid;
+  width: 15%;
+  border-radius: 90px;
+  border: 1px #D1D1D1 solid;
 }
 
-li{
-    list-style-type: none;
+li {
+  list-style-type: none;
 }
 
-.TitreNav{
-    display: flex;
-    align-items: center;
-    gap: 30px;
+.TitreNav {
+  display: flex;
+  align-items: center;
+  gap: 30px;
 }
+
+.title {
+  animation-duration: 2s;
+  animation-name: slidein;
+}
+
+@keyframes slidein {
+  from {
+    margin-left: 50%;
+    width: 300%;
+  }
+  to {
+    margin-left: 0%;
+    width: 100%;
+  }
+}
+.nom_prenom {
+  display: flex;
+  justify-content: center;
+}
+.nom_prenom h2 {
+  font-size: 50px;
+  font-weight: lighter;
+  color: var(--color-p);
+  z-index: 2;
+}
+
+.etoile {
+  width: 0;
+  height: 0;
+  border-left: 50px solid transparent;
+  border-right: 50px solid transparent;
+  border-bottom: 100px solid #FFAEF4;
+  position: absolute;
+  top: 15%;
+  left: 43%;
+  transform: rotate(90deg);
+  transition: 0.6s;
+}
+.etoile:hover {
+  transform: rotate(0deg);
+}
+
+.aboutme {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 4em;
+  gap: 60px;
+}
+
+/*# sourceMappingURL=style.css.map */

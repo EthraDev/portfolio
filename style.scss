@@ -3,13 +3,14 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
-
+    color: var(--color-p);
 }
 
 :root {
     --dark-color: black;
     --color-title: pink; 
     --color-title2: #C7D9FF;
+    --color-p: #303030;
 }
 
 .dark-mode {
@@ -17,6 +18,7 @@
     --dark-color: white;
     --color-title: #F485EF; 
     --color-title2: #90A1C7;
+    --color-p: white;
 }
 
 .title{
@@ -57,4 +59,62 @@ li{
     display: flex;
     align-items: center;
     gap: 30px;
+}
+
+.title {
+    animation-duration: 2s;
+    animation-name: slidein;
+  }
+  
+  @keyframes slidein {
+    from {
+      margin-left: 50%;
+      width: 300%;
+    }
+  
+    to {
+      margin-left: 0%;
+      width: 100%;
+    }
+  
+}
+
+.nom_prenom {
+    display: flex;
+    justify-content: center;
+
+    h2 {
+        font-size: 50px;
+        font-weight: lighter;
+        color: var(--color-p);
+        z-index: 2;
+    }
+}
+
+
+
+.etoile {
+    width: 0;
+	height: 0;
+	border-left: 50px solid transparent;
+	border-right: 50px solid transparent;
+	border-bottom: 100px solid #FFAEF4;
+    position: absolute;
+    top: 15%;
+    left: 43%;
+    transform: rotate(90deg);
+    transition: 0.6s;
+
+    &:hover {
+        transform: rotate(0deg);
+    }
+
+}
+
+.aboutme {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 4em;
+    gap: 60px;
 }
