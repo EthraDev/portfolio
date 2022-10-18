@@ -12,6 +12,8 @@
     --color-title2: #C7D9FF;
     --color-p: #303030;
     --color-pink: #F1B1EF;
+    --box-shadow: rgba(0,0,0,0.2);
+    --card-background: white;
 }
 
 .dark-mode {
@@ -21,6 +23,8 @@
     --color-title2: #90A1C7;
     --color-p: white;
     --color-pink: #F42BEB;
+    --box-shadow: rgba(255,255,255,0.2);
+    --card-background: black;
 }
 
 .title{
@@ -116,11 +120,6 @@
     transform: rotate(90deg);
     transition: 0.6s;
     z-index: -1;
-
-    &:hover {
-        transform: rotate(0deg);
-    }
-
 }
 
 .aboutme {
@@ -186,4 +185,42 @@
     top: 41%;
     left: 77%;
     transform: rotate(45deg);
+}
+
+.passion {
+
+    h2 {
+        text-align: center;
+        font-size: 35px;
+        font-weight: lighter;
+    }
+
+    .grid-passion {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        width: 100%;
+        gap: 30px;
+        padding: 2em;
+        text-align: center;
+
+        div {
+            background: white;
+            box-shadow: 0 5px 10px var(--box-shadow);
+            height: 80%;
+            background-color: var(--card-background);
+
+            img {
+                width: 100%;
+                height: 80%;
+                object-fit: cover;
+            }
+
+            h3 {
+                padding: 1em;
+                font-size: 24px;
+                font-weight: lighter;
+                color: var(--color-p);
+            }
+        }
+    }
 }
