@@ -37,6 +37,21 @@
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
+@media screen and (max-width: 600px) {
+  .title {
+    font-size: 18px;
+  }
+}
+@media screen and (min-width: 601px) and (max-width: 1024px) {
+  .title {
+    font-size: 26px;
+  }
+}
+@media screen and (min-width: 1025px) and (max-width: 1700px) {
+  .title {
+    font-size: 30px;
+  }
+}
 
 .navbar {
   display: flex;
@@ -57,6 +72,21 @@
   border-right: none;
   border-color: var(--color-pink);
   color: var(--color-pink);
+}
+@media screen and (max-width: 600px) {
+  .navbar a {
+    font-size: 14px;
+  }
+}
+@media screen and (min-width: 601px) and (max-width: 1024px) {
+  .navbar a {
+    font-size: 16px;
+  }
+}
+@media screen and (min-width: 1025px) and (max-width: 1700px) {
+  .navbar a {
+    font-size: 18px;
+  }
 }
 
 #pichu {
@@ -93,11 +123,41 @@
 .nom_prenom {
   margin-bottom: 4em;
 }
+@media screen and (max-width: 600px) {
+  .nom_prenom {
+    margin-bottom: 1em;
+  }
+}
+@media screen and (min-width: 601px) and (max-width: 1024px) {
+  .nom_prenom {
+    margin-bottom: 2em;
+  }
+}
+@media screen and (min-width: 1025px) and (max-width: 1700px) {
+  .nom_prenom {
+    margin-bottom: 4em;
+  }
+}
 .nom_prenom h2 {
   font-size: 35px;
   font-weight: lighter;
   color: var(--color-p);
   z-index: 2;
+}
+@media screen and (max-width: 600px) {
+  .nom_prenom h2 {
+    font-size: 16px;
+  }
+}
+@media screen and (min-width: 601px) and (max-width: 1024px) {
+  .nom_prenom h2 {
+    font-size: 20px;
+  }
+}
+@media screen and (min-width: 1025px) and (max-width: 1700px) {
+  .nom_prenom h2 {
+    font-size: 26px;
+  }
 }
 
 .triangle {
@@ -113,6 +173,11 @@
   transition: 0.6s;
   z-index: -1;
 }
+@media screen and (max-width: 1700px) {
+  .triangle {
+    display: none;
+  }
+}
 
 .aboutme {
   display: flex;
@@ -121,6 +186,24 @@
   padding: 4em 15em;
   gap: 60px;
 }
+@media screen and (max-width: 600px) {
+  .aboutme {
+    padding: 1em 0;
+    gap: 10px;
+  }
+}
+@media screen and (min-width: 601px) and (max-width: 1024px) {
+  .aboutme {
+    padding: 2em 4em;
+    gap: 20px;
+  }
+}
+@media screen and (min-width: 1025px) and (max-width: 1700px) {
+  .aboutme {
+    padding: 2em 10em;
+    gap: 40px;
+  }
+}
 .aboutme img {
   width: 60%;
   height: 50vh;
@@ -128,6 +211,26 @@
   object-position: bottom;
   border-top-left-radius: 80px 80px;
   border-bottom-right-radius: 80px 80px;
+}
+@media screen and (max-width: 600px) {
+  .aboutme img {
+    height: 35vh;
+  }
+}
+@media screen and (min-width: 601px) and (max-width: 1024px) {
+  .aboutme img {
+    height: 35vh;
+  }
+}
+@media screen and (min-width: 601px) and (max-width: 850px) {
+  .aboutme img {
+    height: 40vh;
+  }
+}
+@media screen and (min-width: 851px) and (max-width: 1700px) {
+  .aboutme img {
+    height: 45vh;
+  }
 }
 .aboutme div {
   display: flex;
@@ -146,9 +249,39 @@
   border-bottom: none;
   border-top: none;
 }
+@media screen and (max-width: 600px) {
+  .aboutme div ul {
+    padding: 1em 6em;
+  }
+}
+@media screen and (min-width: 601px) and (max-width: 1024px) {
+  .aboutme div ul {
+    padding: 1em 5em;
+  }
+}
+@media screen and (min-width: 1025px) and (max-width: 1700px) {
+  .aboutme div ul {
+    padding: 1em 5em;
+  }
+}
 .aboutme div ul li {
   font-size: 18px;
   list-style-type: circle;
+}
+@media screen and (max-width: 600px) {
+  .aboutme div ul li {
+    font-size: 10px;
+  }
+}
+@media screen and (min-width: 601px) and (max-width: 1024px) {
+  .aboutme div ul li {
+    font-size: 14px;
+  }
+}
+@media screen and (min-width: 1025px) and (max-width: 1700px) {
+  .aboutme div ul li {
+    font-size: 16px;
+  }
 }
 .aboutme div ul:after {
   content: "✨";
@@ -156,8 +289,38 @@
 .aboutme h3 {
   font-size: 24px;
 }
+@media screen and (max-width: 600px) {
+  .aboutme h3 {
+    font-size: 14px;
+  }
+}
+@media screen and (min-width: 601px) and (max-width: 1024px) {
+  .aboutme h3 {
+    font-size: 16px;
+  }
+}
+@media screen and (min-width: 1025px) and (max-width: 1700px) {
+  .aboutme h3 {
+    font-size: 20px;
+  }
+}
 .aboutme h3:before {
   content: "🍪";
+}
+@media screen and (max-width: 600px) {
+  .aboutme {
+    flex-direction: column;
+  }
+}
+@media screen and (min-width: 601px) and (max-width: 850px) {
+  .aboutme {
+    flex-direction: column;
+  }
+}
+@media screen and (min-width: 851px) and (max-width: 1700px) {
+  .aboutme {
+    flex-direction: row;
+  }
 }
 
 #etoile {
@@ -167,11 +330,31 @@
   left: 77%;
   transform: rotate(45deg);
 }
+@media screen and (max-width: 1500px) {
+  #etoile {
+    display: none;
+  }
+}
 
 .passion h2 {
   text-align: center;
   font-size: 35px;
   font-weight: lighter;
+}
+@media screen and (max-width: 600px) {
+  .passion h2 {
+    font-size: 18px;
+  }
+}
+@media screen and (min-width: 601px) and (max-width: 1024px) {
+  .passion h2 {
+    font-size: 26px;
+  }
+}
+@media screen and (min-width: 1025px) and (max-width: 1700px) {
+  .passion h2 {
+    font-size: 30px;
+  }
 }
 .passion .grid-passion {
   display: grid;
@@ -197,6 +380,41 @@
   font-weight: lighter;
   color: var(--color-p);
 }
+@media screen and (max-width: 600px) {
+  .passion .grid-passion div h3 {
+    font-size: 14px;
+  }
+}
+@media screen and (min-width: 601px) and (max-width: 1024px) {
+  .passion .grid-passion div h3 {
+    font-size: 16px;
+  }
+}
+@media screen and (min-width: 1025px) and (max-width: 1700px) {
+  .passion .grid-passion div h3 {
+    font-size: 20px;
+  }
+}
+@media screen and (max-width: 600px) {
+  .passion .grid-passion {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media screen and (min-width: 601px) and (max-width: 880px) {
+  .passion .grid-passion {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media screen and (min-width: 881px) and (max-width: 1024px) {
+  .passion .grid-passion {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media screen and (min-width: 1025px) and (max-width: 1700px) {
+  .passion .grid-passion {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
 
 .contact {
   display: flex;
@@ -209,12 +427,42 @@
 .contact a {
   color: var(--color-p);
 }
+@media screen and (max-width: 600px) {
+  .contact {
+    font-size: 14px;
+  }
+}
+@media screen and (min-width: 601px) and (max-width: 1024px) {
+  .contact {
+    font-size: 16px;
+  }
+}
+@media screen and (min-width: 1025px) and (max-width: 1700px) {
+  .contact {
+    font-size: 20px;
+  }
+}
 
 .title-center {
   text-align: center;
   font-weight: lighter;
   font-size: 35px;
   margin-top: 1em;
+}
+@media screen and (max-width: 600px) {
+  .title-center {
+    font-size: 18px;
+  }
+}
+@media screen and (min-width: 601px) and (max-width: 1024px) {
+  .title-center {
+    font-size: 26px;
+  }
+}
+@media screen and (min-width: 1025px) and (max-width: 1700px) {
+  .title-center {
+    font-size: 30px;
+  }
 }
 
 .skills-bar div {
@@ -225,8 +473,28 @@
   justify-content: space-between;
   margin: 0 10em 1em 10em;
 }
+@media screen and (max-width: 500px) {
+  .skills-bar div div {
+    margin: 0 2em 1em 2em;
+  }
+}
 .skills-bar div div h3 {
   font-weight: lighter;
+}
+@media screen and (max-width: 600px) {
+  .skills-bar div div h3 {
+    font-size: 14px;
+  }
+}
+@media screen and (min-width: 601px) and (max-width: 1024px) {
+  .skills-bar div div h3 {
+    font-size: 18px;
+  }
+}
+@media screen and (min-width: 1025px) and (max-width: 1700px) {
+  .skills-bar div div h3 {
+    font-size: 24px;
+  }
 }
 .skills-bar div .bar {
   border: 1px solid var(--color-title2);
@@ -268,11 +536,64 @@
   opacity: 0;
   transition: 0.5s;
 }
+@media screen and (max-width: 600px) {
+  .div-project div h3 {
+    font-size: 18px;
+  }
+}
+@media screen and (min-width: 601px) and (max-width: 1024px) {
+  .div-project div h3 {
+    font-size: 24px;
+  }
+}
+@media screen and (min-width: 1025px) and (max-width: 1700px) {
+  .div-project div h3 {
+    font-size: 26px;
+  }
+}
 .div-project div:hover img {
   opacity: 0.4;
 }
 .div-project div:hover h3 {
   opacity: 1;
+}
+@media screen and (max-width: 600px) {
+  .div-project {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .div-project div:focus img {
+    opacity: 0.4;
+  }
+  .div-project div:focus h3 {
+    opacity: 1;
+  }
+}
+@media screen and (min-width: 601px) and (max-width: 880px) {
+  .div-project {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .div-project div:focus img {
+    opacity: 0.4;
+  }
+  .div-project div:focus h3 {
+    opacity: 1;
+  }
+}
+@media screen and (min-width: 881px) and (max-width: 1024px) {
+  .div-project {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .div-project div:focus img {
+    opacity: 0.4;
+  }
+  .div-project div:focus h3 {
+    opacity: 1;
+  }
+}
+@media screen and (min-width: 1025px) and (max-width: 1700px) {
+  .div-project {
+    grid-template-columns: repeat(2, 1fr);
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
