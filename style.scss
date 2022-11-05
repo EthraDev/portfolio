@@ -139,24 +139,6 @@
     }
 }
 
-.title {
-    animation-duration: 2s;
-    animation-name: slidein;
-  }
-  
-  @keyframes slidein {
-    from {
-      margin-left: 50%;
-      width: 300%;
-    }
-  
-    to {
-      margin-left: 0%;
-      width: 100%;
-    }
-  
-}
-
 .nom_prenom {
 
     margin-bottom: 4em;
