@@ -197,8 +197,8 @@
   border-right: 30px solid transparent;
   border-bottom: 60px solid var(--color-pink);
   position: absolute;
-  top: 26.5%;
-  left: 61%;
+  top: 29%;
+  left: 60%;
   transform: rotate(90deg);
   transition: 0.6s;
   z-index: -1;
@@ -235,8 +235,7 @@
   }
 }
 .aboutme img {
-  width: 60%;
-  height: 50vh;
+  width: 35%;
   object-fit: cover;
   object-position: bottom;
   border-top-left-radius: 80px 80px;
@@ -244,22 +243,8 @@
 }
 @media screen and (max-width: 600px) {
   .aboutme img {
-    height: 35vh;
-  }
-}
-@media screen and (min-width: 601px) and (max-width: 1024px) {
-  .aboutme img {
-    height: 35vh;
-  }
-}
-@media screen and (min-width: 601px) and (max-width: 850px) {
-  .aboutme img {
-    height: 40vh;
-  }
-}
-@media screen and (min-width: 851px) and (max-width: 1700px) {
-  .aboutme img {
-    height: 45vh;
+    border-top-left-radius: 40px 40px;
+    border-bottom-right-radius: 40px 40px;
   }
 }
 .aboutme div {
@@ -281,7 +266,7 @@
 }
 @media screen and (max-width: 600px) {
   .aboutme div ul {
-    padding: 1em 6em;
+    padding: 1em 4em;
   }
 }
 @media screen and (min-width: 601px) and (max-width: 1024px) {
@@ -315,6 +300,21 @@
 }
 .aboutme div ul:after {
   content: "✨";
+}
+@media screen and (max-width: 600px) {
+  .aboutme div {
+    padding: 0;
+  }
+}
+@media screen and (min-width: 601px) and (max-width: 1024px) {
+  .aboutme div {
+    padding: 0 1em;
+  }
+}
+@media screen and (min-width: 1025px) and (max-width: 1700px) {
+  .aboutme div {
+    padding: 0 2em;
+  }
 }
 .aboutme h3 {
   font-size: 24px;
