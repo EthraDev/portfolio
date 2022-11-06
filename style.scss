@@ -6,7 +6,7 @@
     color: var(--color-p);
     scroll-behavior: smooth;
 }
-
+// Light mode color
 :root {
     --dark-color: black;
     --color-title: pink; 
@@ -17,7 +17,7 @@
     --card-background: white;
     --background-footer: #F7F7F7;
 }
-
+// dark mode color
 .dark-mode {
     background-color: black;
     --dark-color: white;
@@ -29,7 +29,8 @@
     --card-background: black;
     --background-footer: #0F0F0F;
 }
-
+// Navbar Style
+// Title
 .title{
 
     background: -webkit-linear-gradient(120deg, var(--color-title) 30%, var(--color-title2) 70%);
@@ -49,7 +50,8 @@
         font-size: 30px;
     }
 }
-
+// / Title
+// Navbar Link
 .navbar {
     display: flex;
     justify-content: space-between;
@@ -98,7 +100,9 @@
     }
     
 }
+// / Navbar Link
 
+// Img logo
 #pichu {
     width: 15%;
     border-radius: 90px;
@@ -116,6 +120,7 @@
         width: 15%;
     }
 }
+// / Img logo
 
 .li{
     list-style-type: none;
@@ -138,7 +143,11 @@
         gap: 30px;
     }
 }
+// End of Navbar
 
+// About me section
+
+// Title
 .nom_prenom {
 
     margin-bottom: 4em;
@@ -175,9 +184,9 @@
         }
     }
 }
+// / Title
 
-
-
+// Triangle
 .triangle {
     width: 0;
 	height: 0;
@@ -195,6 +204,10 @@
         display: none;
     }
 }
+
+// / Triangle
+
+// Description
 
 .aboutme {
     display: flex;
@@ -339,6 +352,9 @@
     }
 }
 
+// / Description
+
+// Star
 #etoile {
     position: absolute;
     width: 2%;
@@ -350,6 +366,12 @@
         display: none;
     }
 }
+
+// / Star
+
+// End of About me section
+
+// Passions section
 
 .passion {
 
@@ -428,6 +450,9 @@
     }
 }
 
+// End of my passions section
+
+// Footer Contact
 .contact {
     display: flex;
     justify-content: flex-end;
@@ -453,6 +478,9 @@
     }
 }
 
+// End of Footer Contact
+
+// Title Center
 .title-center {
     text-align: center;
     font-weight: lighter;
@@ -471,7 +499,9 @@
         font-size: 30px;
     }
 }
+// End of title Center
 
+// My Skills section
 .skills-bar {
 
     div {
@@ -516,6 +546,9 @@
     }
 }
 
+// End of my skills section
+
+// My projects section
 .div-project {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -621,3 +654,5 @@
         grid-template-columns: repeat(2, 1fr);
     }
 }
+
+// End of my projects section
